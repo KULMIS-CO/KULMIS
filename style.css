@@ -147,29 +147,32 @@ html {
   }
   
 .hero-kicker {
-  font-size: 14px;
+  font-size: 22px;          /* bigger than headline */
   font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: none;
-  color: rgba(184, 146, 31, 0.9);
-  margin-bottom: 12px;
-}
-
-
- .hero-title {
-  font-size: clamp(24px, 2.6vw, 28px);
-  line-height: 1.2;
+  color: rgba(184, 146, 31, 0.95);
   margin-bottom: 14px;
 }
+
+
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
 
   }
   
   .hero-subtitle {
-    font-size: 15px;
-    color: var(--kulmis-muted);
-    max-width: 420px;
-    margin-bottom: 18px;
-  }
+  font-size: 15px;
+  color: var(--kulmis-muted);
+  max-width: 420px;
+}
+
   
   .hero-badges {
     display: flex;
