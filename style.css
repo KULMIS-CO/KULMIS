@@ -147,11 +147,11 @@ html {
   }
   
 .hero-kicker {
-  font-size: 14px;              /* bigger than subtitle */
-  font-weight: 600;             /* gives presence */
-  letter-spacing: 0.02em;       /* subtle, not shouty */
-  text-transform: none;         /* sentence case */
-  color: rgba(184, 146, 31, 0.85); /* visible gold */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgba(184, 146, 31, 0.9);
   margin-bottom: 12px;
 }
 
