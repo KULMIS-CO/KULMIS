@@ -153,11 +153,14 @@ html {
     color: var(--kulmis-gold);
     margin-bottom: 10px;
   }
-  
-  .hero-title {
-    font-size: clamp(26px, 3vw, 32px);
-    line-height: 1.15;
-    margin-bottom: 14px;
+
+
+ .hero-title {
+  font-size: clamp(24px, 2.6vw, 28px);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
   }
   
   .hero-subtitle {
