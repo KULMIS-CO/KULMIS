@@ -146,14 +146,14 @@ html {
     align-items: center;
   }
   
-  .hero-kicker {
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(184, 146, 31, 0.75); /* softer gold */
+.hero-kicker {
+  font-size: 14px;              /* bigger than subtitle */
+  font-weight: 600;             /* gives presence */
+  letter-spacing: 0.02em;       /* subtle, not shouty */
+  text-transform: none;         /* sentence case */
+  color: rgba(184, 146, 31, 0.85); /* visible gold */
   margin-bottom: 12px;
 }
-
 
 
  .hero-title {
