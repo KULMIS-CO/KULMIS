@@ -383,12 +383,6 @@ html {
     linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
 
-.hero-kicker {
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
 
 .hero-badges .badge {
   background: rgba(15, 23, 42, 0.04);
