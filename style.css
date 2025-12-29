@@ -249,6 +249,13 @@ html {
     grid-template-rows: auto auto;
     gap: 16px;
   }
+
+.hero-kicker {
+  max-width: 420px;
+  margin: 0 auto 12px auto;
+  text-align: center;
+}
+
 /* === STEP 1: Hero polish & investor-grade spacing === */
 
 .hero {
