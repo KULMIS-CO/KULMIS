@@ -252,8 +252,8 @@ html {
 
 .hero-kicker {
   max-width: 420px;
-  margin-bottom: 12px;
-  text-align: left;
+  margin: 0 auto 12px auto;
+  text-align: center;
 }
 
 
