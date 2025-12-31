@@ -803,11 +803,21 @@ html {
   
   /* RESPONSIVE BREAKPOINT */
   @media (max-width: 760px) {
-    .nav-links,
-    .nav-cta {
-      display: none; /* hide desktop nav */
-    }
-  
+   .nav-links {
+  display: none; /* hide nav links only */
+}
+
+.nav-cta {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-cta button {
+  padding: 8px 14px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
     .hamburger {
       display: block; /* show mobile icon */
     }
