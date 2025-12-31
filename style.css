@@ -803,6 +803,19 @@ html {
   
   /* RESPONSIVE BREAKPOINT */
   @media (max-width: 760px) {
+      
+/* Step 1: slim the header on mobile */
+  header {
+    padding: 10px 16px;
+    min-height: 56px;
+  }
+      
+  /* Step 2: shrink tagline text on mobile */
+  .nav-tagline {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
    .nav-links {
   display: none; /* hide nav links only */
 }
@@ -825,6 +838,13 @@ html {
     .mobile-menu.open {
       display: flex; /* show menu when open */
     }
+
+        /* Step 3: soften sticky header on scroll */
+  header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    backdrop-filter: saturate(1.1) blur(2px);
+  }
+
   }
   /* Signup page layout */
 .container {
