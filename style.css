@@ -802,54 +802,41 @@ html {
   }
   
 
-/* MOBILE NAV — FINAL (ONLY ONE VERSION) */
+/* ===============================
+   MOBILE NAV — FINAL, CLEAN RESET
+   =============================== */
 @media (max-width: 760px) {
 
-  /* Header stays compact and pinned */
+  /* Header stays normal height */
   header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    height: 56px;
-    padding: 10px 12px;
+    position: relative;
+    padding: 12px 16px;
     background: #fff;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-
-    /* prevents weird wrapping/tall header */
-    flex-wrap: nowrap;
   }
 
-  /* Logo + tagline */
+  /* Logo + tagline stack neatly */
   .nav-brand {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
-
-    /* allows text to shrink instead of pushing height */
-    flex: 1;
-    min-width: 0;
   }
 
   .nav-tagline {
     font-size: 12px;
-    line-height: 1.2;
   }
 
-  /* Hide desktop links on mobile */
+  /* Hide desktop links */
   .nav-links {
     display: none;
   }
 
-  /* Keep ONLY the working Get started (top right) */
+  /* Keep ONLY the real Get Started button (top right) */
   .nav-cta {
     display: inline-flex;
     align-items: center;
-    flex-shrink: 0;
-    margin-left: auto;
   }
 
   .nav-cta a {
@@ -858,56 +845,27 @@ html {
     white-space: nowrap;
   }
 
-  /* Hamburger always visible */
+  /* Hamburger stays on same row */
   .hamburger {
     display: block;
-    flex-shrink: 0;
+    margin-left: 8px;
   }
 
-  /* Mobile menu: overlay, NOT pushing page, not fullscreen */
+  /* Mobile menu pushes content down (NOT fixed, NOT sticky) */
   .mobile-menu {
-    position: fixed;
-    top: 56px;
-    left: 0;
-    right: 0;
-
-    background: #fff;
     display: none;
-    flex-direction: column;
-
-    padding: 12px 16px;
-    border-top: 1px solid var(--kulmis-border);
-    box-shadow: 0 12px 28px rgba(11, 26, 51, 0.08);
-
-    /* This is what stops it taking over the screen */
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
-
-    z-index: 999;
+    position: relative;
+    background: #fff;
+    padding: 16px;
+    border-bottom: 1px solid var(--kulmis-border);
   }
 
   .mobile-menu.open {
-    display: flex;
-  }
-
-  .mobile-menu a {
-    padding: 12px 0;
+    display: block;
   }
 }
 
 
-
-
-   
-
-
-    
-
-
-
- 
-        
-  
   
   /* Signup page layout */
 .container {
