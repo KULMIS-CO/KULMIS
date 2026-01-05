@@ -802,22 +802,26 @@ html {
   }
   
 
-/* ===============================
-   MOBILE NAV — FINAL, CLEAN RESET
-   =============================== */
-@media (max-width: 760px) {
+/* ============================
+   MOBILE NAV — FINAL, CLEAN
+   ============================ */
+@media (max-width: 768px) {
 
-  /* Header stays normal height */
+  /* Header */
   header {
-    position: relative;
-    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 56px;
+    padding: 0 16px;
     background: #fff;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  /* Logo + tagline stack neatly */
+  /* Brand */
   .nav-brand {
     display: flex;
     flex-direction: column;
@@ -826,6 +830,7 @@ html {
 
   .nav-tagline {
     font-size: 12px;
+    line-height: 1.2;
   }
 
   /* Hide desktop links */
@@ -833,10 +838,11 @@ html {
     display: none;
   }
 
-  /* Keep ONLY the real Get Started button (top right) */
+  /* ONE working Get Started (top right) */
   .nav-cta {
     display: inline-flex;
     align-items: center;
+    margin-left: auto;
   }
 
   .nav-cta a {
@@ -845,25 +851,37 @@ html {
     white-space: nowrap;
   }
 
-  /* Hamburger stays on same row */
+  /* Hamburger */
   .hamburger {
     display: block;
-    margin-left: 8px;
+    margin-left: 12px;
   }
 
-  /* Mobile menu pushes content down (NOT fixed, NOT sticky) */
+  /* Mobile menu (dropdown below header) */
   .mobile-menu {
-    display: none;
-    position: relative;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+
     background: #fff;
-    padding: 16px;
     border-bottom: 1px solid var(--kulmis-border);
+    display: none;
+
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
   }
 
   .mobile-menu.open {
-    display: block;
+    display: flex;
+  }
+
+  .mobile-menu a {
+    font-size: 16px;
   }
 }
+
 
 
   
