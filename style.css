@@ -1262,3 +1262,54 @@ html {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* ===== MOBILE HEADER HARD OVERRIDE (FINAL) ===== */
+@media (max-width: 760px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    height: 56px;
+    padding: 8px 12px;
+    background: #fff;
+  }
+
+  .nav-brand {
+    flex: 1;
+  }
+
+  .nav-cta {
+    margin-left: auto;
+  }
+
+  .hamburger {
+    margin-left: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
