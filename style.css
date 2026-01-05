@@ -804,17 +804,23 @@ html {
   /* RESPONSIVE BREAKPOINT */
   @media (max-width: 760px) {
       
-/* Step 1: slim the header on mobile */
-  header {
-    padding: 10px 16px;
-    min-height: 56px;
-  }
-      
+header {
+  padding: 6px 12px;
+  min-height: unset;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
   /* Step 2: shrink tagline text on mobile */
   .nav-tagline {
     font-size: 12px;
     line-height: 1.2;
   }
+      
+header * {
+  flex-wrap: nowrap;
+}
 
    .nav-links {
   display: none; /* hide nav links only */
