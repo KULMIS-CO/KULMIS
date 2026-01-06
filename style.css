@@ -803,19 +803,6 @@ html {
   
   /* RESPONSIVE BREAKPOINT */
   @media (max-width: 760px) {
-   header {
-    padding: 6px 12px;   /* reduces visual bulk */
-    min-height: 52px;    /* keeps it compact */
-  }
-
-  .nav-left {
-    line-height: 1.1;   /* tightens logo + tagline */
-  }
-
-  .nav-tagline {
-    font-size: 11px;    /* slightly smaller on mobile */
-  }
-      
     .nav-links,
     .nav-cta {
       display: none; /* hide desktop nav */
@@ -828,7 +815,20 @@ html {
     .mobile-menu.open {
       display: flex; /* show menu when open */
     }
+
+.nav {
+    padding: 6px 12px;   /* THIS is the visible bar */
+    min-height: 52px;
   }
+
+  .nav-left {
+    line-height: 1.1;
+  }
+
+  .nav-tagline {
+    font-size: 11px;
+  }
+ }
   /* Signup page layout */
 .container {
     max-width: 900px;
