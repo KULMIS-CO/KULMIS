@@ -803,6 +803,19 @@ html {
   
   /* RESPONSIVE BREAKPOINT */
   @media (max-width: 760px) {
+   header {
+    padding: 6px 12px;   /* reduces visual bulk */
+    min-height: 52px;    /* keeps it compact */
+  }
+
+  .nav-left {
+    line-height: 1.1;   /* tightens logo + tagline */
+  }
+
+  .nav-tagline {
+    font-size: 11px;    /* slightly smaller on mobile */
+  }
+      
     .nav-links,
     .nav-cta {
       display: none; /* hide desktop nav */
